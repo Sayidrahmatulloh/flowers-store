@@ -1,3 +1,5 @@
+import TheFooter from '@/components/theFooter'
+import TheHeader from '@/components/theHeader'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -16,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="max-w-[1200px] p-4">
+          <TheHeader />
+          {children}
+          <TheFooter />
+        </main>
+      </body>
     </html>
   )
 }
