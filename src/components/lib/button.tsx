@@ -7,7 +7,7 @@ function Button({
   isPrimary = true,
   isHover = true,
 }: {
-  icon: IconProp
+  icon?: IconProp
   text: string
   isPrimary?: boolean
   isHover?: boolean

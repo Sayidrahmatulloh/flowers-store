@@ -5,7 +5,7 @@ function IconButton({ icon, hasHoverClass, classes }: { icon: IconProp; hasHover
   return (
     <FontAwesomeIcon
       icon={icon}
-      className={`${classes ? classes : 'size-6'} text-gray-500 ${hasHoverClass && 'hover:text-green-500'}`}
+      className={`${classes ? classes : 'size-6'} text-gray-500 ${hasHoverClass && 'hover:text-green-500'} cursor-pointer`}
     />
   )
 }

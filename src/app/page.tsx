@@ -1,3 +1,9 @@
+import MainBanner from './components/mainBanner'
 export default function Home() {
-  return <div className="text-green-500">home</div>
+  return (
+    <div className=''>
+      <MainBanner />
+      home
+    </div>
+  )
 }

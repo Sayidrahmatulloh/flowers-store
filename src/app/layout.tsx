@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={'scroll-smooth'}>
       <body className={ceraFont.className}>
-        <main className='mx-auto max-w-[1200px] px-4'>
+        <main className='mx-auto max-w-[1200px] p-2'>
           <div className='fixed left-0 top-0 w-full bg-white px-4'>
             <TheHeader />
           </div>
