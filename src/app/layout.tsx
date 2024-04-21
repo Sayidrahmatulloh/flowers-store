@@ -1,5 +1,6 @@
 import TheFooter from '@/components/theFooter'
 import TheHeader from '@/components/theHeader'
+import { ceraFont } from '@/config/ceraFont'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -17,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <main className="mx-auto max-w-[1200px] p-4">
+    <html lang='en' className={'scroll-smooth'}>
+      <body className={ceraFont.className}>
+        <main className='mx-auto max-w-[1200px] p-4'>
           <TheHeader />
           {children}
           <TheFooter />
