@@ -1,6 +1,6 @@
 import TheFooter from '@/components/theFooter'
 import TheHeader from '@/components/theHeader'
-import { ceraFont } from '@/config/ceraFont'
+import { ceraFont } from '@/constants/ceraFont'
 import type { Metadata } from 'next'
 import './globals.css'
 
@@ -15,13 +15,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className={'scroll-smooth'}>
+    <html lang='en' className={'select-none scroll-smooth'}>
       <body className={ceraFont.className}>
         <main className='mx-auto max-w-[1200px] p-2'>
           <div className='fixed left-0 top-0 w-full bg-white px-4'>
             <TheHeader />
           </div>
-          <div className='pt-24'>{children}</div>
+          <div className='mt-24 min-h-screen'>{children}</div>
           <TheFooter />
         </main>
       </body>

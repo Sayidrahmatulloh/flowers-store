@@ -1,9 +1,13 @@
 import MainBanner from './components/mainBanner'
+import Products from './components/products'
+
 export default function Home() {
   return (
     <div className=''>
-      <MainBanner />
-      home
+      <div className='mb-12'>
+        <MainBanner />
+      </div>
+      <Products />
     </div>
   )
 }
