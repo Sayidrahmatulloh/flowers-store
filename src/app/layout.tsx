@@ -21,8 +21,10 @@ export default function RootLayout({
     <html lang='en' className={'scroll-smooth'}>
       <body className={ceraFont.className}>
         <main className='mx-auto max-w-[1200px] p-4'>
-          <TheHeader />
-          {children}
+          <div className='fixed m-auto w-full max-w-[1200px] bg-white'>
+            <TheHeader />
+          </div>
+          <div className='pt-24'>{children}</div>
           <TheFooter />
         </main>
       </body>
