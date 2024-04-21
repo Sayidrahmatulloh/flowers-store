@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-    button {
-        @apply cursor-pointer;
-    }
+  button {
+    @apply cursor-pointer;
+  }
 
-    img {
-        @apply w-full
-    }
+  img {
+    @apply w-full;
+  }
 }
