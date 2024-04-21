@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang='en' className={'select-none scroll-smooth'}>
       <body className={ceraFont.className}>
         <main className='mx-auto max-w-[1200px] p-2'>
-          <div className='fixed left-0 top-0 w-full bg-white px-4'>
+          <div className='fixed left-0 top-0 z-50 w-full bg-white px-4'>
             <TheHeader />
           </div>
           <div className='mt-24 min-h-screen'>{children}</div>

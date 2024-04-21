@@ -3,7 +3,7 @@ import ProductFilter from './productFilter'
 
 function ProductCards() {
   return (
-    <div>
+    <div className='w-3/4'>
       <ProductFilter />
       <ProductCardItem />
     </div>
