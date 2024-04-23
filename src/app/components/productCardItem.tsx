@@ -25,7 +25,13 @@ function ProductCardItem({
         </span>
       )}
       <div className='relative mb-5 mt-2 size-60'>
-        <Image src={`/products/${encodeURIComponent(image)}`} alt={name} className='w-full object-cover' fill />
+        <Image
+          src={`/products/${encodeURIComponent(image)}`}
+          alt={name}
+          className='w-full object-cover'
+          fill
+          loading='lazy'
+        />
       </div>
       <div className='flex items-center justify-center gap-6 px-4 pb-2'>
         {[faCartPlus, faHeart, faSearch].map((item, index) => (
