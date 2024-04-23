@@ -116,3 +116,18 @@ export const size = [
     count: 78,
   },
 ]
+
+export const filter = [
+  {
+    typeText: 'All Plants',
+    typeValue: 'all',
+  },
+  {
+    typeText: 'New Arrivals',
+    typeValue: 'new',
+  },
+  {
+    typeText: 'Scale',
+    typeValue: 'scale',
+  },
+]

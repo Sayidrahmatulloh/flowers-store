@@ -3,7 +3,7 @@ import Button from '@/components/lib/button'
 import Image from 'next/image'
 function MainBanner() {
   return (
-    <div className='flex h-[500px] w-full items-center bg-gray-50/80 p-10'>
+    <div className='flex h-[500px] w-full items-center bg-slate-50 p-10'>
       <div className='w-2/3'>
         <span className='mb-4 font-medium uppercase tracking-[1px] text-gray-600'>Welcome to GreenShop</span>
         <h1 className='mb-2 text-7xl font-bold uppercase text-gray-700'>

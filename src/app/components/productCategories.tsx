@@ -9,7 +9,7 @@ function ProductCategories() {
   return (
     <div className='min-w-80 rounded bg-gradient-to-b from-gray-100/80 to-gray-50/50 p-5'>
       <ProductCategoryTitle text='Categories' />
-      <div className='mb-4 pl-5'>
+      <div className='mb-4'>
         {productCategoriesAndCount.map((item, i) => (
           <ProductCategoryItem
             key={i}

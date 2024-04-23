@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 function ProductDiscounted() {
   return (
-    <div className='flex flex-col items-center gap-2 rounded-lg border bg-white p-2 pt-0'>
+    <div className='mt-5 flex flex-col items-center gap-2 rounded-lg border bg-white p-2 pt-0'>
       <Image className='w-full' src={'/SuperSale.svg'} alt='super sale' width={200} height={200} />
       <h2 className='flex items-center text-2xl font-bold uppercase text-gray-600'>
         Up to 75
