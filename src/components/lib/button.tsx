@@ -6,11 +6,13 @@ function Button({
   text,
   isPrimary = true,
   isHover = true,
+  classes,
 }: {
   icon?: IconProp
   text: string
   isPrimary?: boolean
   isHover?: boolean
+  classes?: string
 }) {
   const primary = isPrimary
     ? `bg-green-500 text-white ${isHover ? 'hover:bg-white hover:text-green-500' : ''}`
@@ -18,7 +20,7 @@ function Button({
 
   return (
     <button
-      className={`flex items-center gap-2 rounded-lg  border-2 border-green-500 px-6  py-2 text-lg font-medium capitalize transition-all ${primary}`}
+      className={`flex items-center gap-2 rounded-lg  border-2 border-green-500 px-6  py-2 text-lg font-medium capitalize transition-all ${primary} ${classes}`}
     >
       {icon && <FontAwesomeIcon icon={icon} className='size-6' />}
       {text}
