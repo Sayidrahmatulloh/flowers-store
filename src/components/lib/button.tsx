@@ -3,12 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Button({
   icon,
+  iconPosition = 'left',
   text,
   isPrimary = true,
   isHover = true,
   classes,
 }: {
   icon?: IconProp
+  iconPosition?: 'left' | 'right'
   text: string
   isPrimary?: boolean
   isHover?: boolean
@@ -22,8 +24,9 @@ function Button({
     <button
       className={`flex items-center gap-2 rounded-lg  border-2 border-green-500 px-6  py-2 text-lg font-medium capitalize transition-all ${primary} ${classes}`}
     >
-      {icon && <FontAwesomeIcon icon={icon} className='size-6' />}
+      {iconPosition === 'left' && icon && <FontAwesomeIcon icon={icon} className='size-6' />}
       {text}
+      {iconPosition === 'right' && icon && <FontAwesomeIcon icon={icon} className='size-6' />}
     </button>
   )
 }

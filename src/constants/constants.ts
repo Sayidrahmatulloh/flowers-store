@@ -131,3 +131,30 @@ export const filter = [
     typeValue: 'scale',
   },
 ]
+
+export const posts = [
+  {
+    image: 'post-01.png',
+    dateTime: 'September 12  I Read in 6 minutes',
+    title: 'Cactus & Succulent Care Tips',
+    description: 'Cacti are succulents are easy care plants for any home or patio. ',
+  },
+  {
+    image: 'post-02.png',
+    dateTime: 'September 13  I Read in 2 minutes',
+    title: 'Top 10 Succulents for Your Home',
+    description: 'Best in hanging baskets. Prefers medium to high light.',
+  },
+  {
+    image: 'post-03.png',
+    dateTime: 'September 15  I Read in 3 minutes',
+    title: 'Cacti & Succulent Care Tips',
+    description: 'Cacti and succulents thrive in containers and because most are...',
+  },
+  {
+    image: 'post-04.png',
+    dateTime: 'September 15  I Read in 3 minutes',
+    title: 'Best Houseplants Room by Room',
+    description: 'The benefits of houseplants are endless. In addition to..',
+  },
+]

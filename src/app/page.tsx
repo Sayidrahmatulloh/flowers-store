@@ -1,3 +1,4 @@
+import Blogs from './components/blogs'
 import MainBanner from './components/mainBanner'
 import Products from './components/products'
 
@@ -8,6 +9,7 @@ export default function Home() {
         <MainBanner />
       </div>
       <Products />
+      <Blogs />
     </div>
   )
 }
