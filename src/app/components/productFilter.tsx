@@ -15,7 +15,7 @@ function ProductFilter() {
       </div>
       <div>
         Sort By:
-        <select defaultValue='default' className='rounded-md bg-white px-4 py-2 text-gray-500'>
+        <select defaultValue='default' className='rounded-md bg-white px-4 py-2 text-gray-500 focus:outline-none'>
           <option value='default'>Default Sort</option>
           {filter.map((item, index) => (
             <option key={index} value={item.typeValue}>

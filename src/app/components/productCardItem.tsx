@@ -1,5 +1,5 @@
 import IconButton from '@/components/lib/iconButton'
-import { faCartPlus, faDollarSign, faHeart, faPercent, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faCartPlus, faHeart, faPercent, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 
@@ -44,16 +44,10 @@ function ProductCardItem({
       </div>
       <div className='px-4'>
         <h3 className='mb-1 text-lg tracking-wider text-gray-700'>{name}</h3>
-        <div className='mb-2 flex items-center gap-4 font-medium text-green-500'>
-          <span className='flex items-center text-sm'>
-            <FontAwesomeIcon icon={faDollarSign} className='size-4' />
-            {currentPrice.toFixed(2)}
-          </span>
+        <div className='mb-2 flex items-center gap-4 font-medium not-italic text-green-500'>
+          <span className='flex items-center text-sm'>${currentPrice.toFixed(2)}</span>
           {oldPrice && (
-            <span className='ml-2 flex items-center text-sm text-gray-400 line-through'>
-              <FontAwesomeIcon icon={faDollarSign} className='size-4' />
-              {oldPrice.toFixed(2)}
-            </span>
+            <span className='ml-2 flex items-center text-sm text-gray-400 line-through'>${oldPrice.toFixed(2)}</span>
           )}
         </div>
       </div>

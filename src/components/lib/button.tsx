@@ -1,5 +1,6 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { twMerge } from 'tailwind-merge'
 
 function Button({
   icon,
@@ -22,7 +23,11 @@ function Button({
 
   return (
     <button
-      className={`flex items-center gap-2 rounded-lg  border-2 border-green-500 px-6  py-2 text-lg font-medium capitalize transition-all ${primary} ${classes}`}
+      className={twMerge(
+        'flex items-center gap-2 rounded-lg  border-2 border-green-500 px-6  py-2 text-lg font-medium capitalize transition-all ',
+        primary,
+        classes,
+      )}
     >
       {iconPosition === 'left' && icon && <FontAwesomeIcon icon={icon} className='size-6' />}
       {text}

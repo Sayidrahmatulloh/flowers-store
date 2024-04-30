@@ -14,7 +14,7 @@ function BlogItem({
   description: string
 }) {
   return (
-    <div className='min-h-96 w-64 rounded-xl shadow-lg transition-all hover:shadow-xl'>
+    <div className='min-h-96 w-72 rounded-xl shadow-lg transition-all hover:shadow-xl'>
       <div className='relative h-48 w-full'>
         <Image src={`/posts/${image}`} alt={title} className='w-full object-cover' fill loading='lazy' />
       </div>
@@ -30,7 +30,7 @@ function BlogItem({
           iconPosition='right'
           isPrimary={false}
           isHover={true}
-          classes='border-none text-gray-700'
+          classes='border-none'
         />
       </div>
     </div>
