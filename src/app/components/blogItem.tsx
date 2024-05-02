@@ -19,8 +19,8 @@ function BlogItem({
         <Image src={`/posts/${image}`} alt={title} className='w-full object-cover' fill loading='lazy' />
       </div>
       <div className='m-4'>
-        <h4 className='text-sm text-green-500'>{dateTime}</h4>
-        <h2 className='text-2xl font-bold text-gray-700'>{title}</h2>
+        <h4 className='text-sm not-italic text-green-500'>{dateTime}</h4>
+        <h2 className='text-2xl font-bold not-italic text-gray-700'>{title}</h2>
         <p className='mt-2 text-sm text-gray-500'>{description}</p>
       </div>
       <div className='m-2'>

@@ -1,6 +1,5 @@
 import IconButton from '@/components/lib/iconButton'
-import { faCartPlus, faHeart, faPercent, faSearch } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartPlus, faHeart, faSearch } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 
 function ProductCardItem({
@@ -19,9 +18,8 @@ function ProductCardItem({
   return (
     <div className='group relative flex w-full flex-col gap-2  rounded-lg border-2 border-slate-100 hover:border-t-green-500'>
       {discount && (
-        <span className='absolute right-2 top-2 z-10 flex items-center gap-1 rounded-full bg-green-500 px-2 py-1 text-sm font-bold text-white'>
-          {discount}
-          <FontAwesomeIcon icon={faPercent} className='size-4' /> OFF
+        <span className='absolute right-2 top-2 z-10 flex items-center gap-1 rounded-full bg-green-500 px-2 py-1 text-sm font-bold not-italic text-white'>
+          {discount} % OFF
         </span>
       )}
       <div className='relative mb-5 mt-2 size-60'>

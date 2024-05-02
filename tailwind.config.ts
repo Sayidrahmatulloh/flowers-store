@@ -16,6 +16,7 @@ const config: Config = {
         monolisa: ['Monolisa', 'serif'],
         'dank-mono': ['Dank Mono', 'monospace'],
         lotion: ['Lotion', 'serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

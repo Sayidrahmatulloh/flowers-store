@@ -6,12 +6,12 @@ function MainBanner() {
     <div className='flex h-[500px] w-full items-center bg-slate-50 p-10'>
       <div className='w-2/3'>
         <span className='mb-4 font-medium uppercase tracking-[1px] text-gray-600'>Welcome to GreenShop</span>
-        <h1 className='mb-2 text-7xl font-bold uppercase text-gray-700'>
+        <h1 className='mb-2 text-7xl font-bold uppercase not-italic text-gray-700'>
           Lets Make a <br /> Better <span className='text-green-500'>Planet</span>
         </h1>
-        <p className='mb-14 text-sm tracking-wider text-gray-500/90'>
-          We are an online plant shop offering a wide range of cheap and trendy plants. Use our <br /> plants to create
-          an unique Urban Jungle. Order your favorite plants
+        <p className='mb-14 w-[90%] text-sm leading-5 tracking-wider text-gray-500/90'>
+          We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an
+          unique Urban Jungle. Order your favorite plants
         </p>
         <Button text={'Shop Now'} isHover={true} />
       </div>
