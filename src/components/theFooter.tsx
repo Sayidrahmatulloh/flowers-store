@@ -3,11 +3,13 @@ import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@for
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import News from './lib/news'
 import TheHeaderLogo from './lib/theHeaderLogo'
 
 function TheFooter() {
   return (
     <div>
+      <News />
       <div className='flex w-full items-center justify-between border bg-slate-100 p-6'>
         <div className='w-40'>
           <TheHeaderLogo />

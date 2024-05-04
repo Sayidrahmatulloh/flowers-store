@@ -158,3 +158,21 @@ export const posts = [
     description: 'The benefits of houseplants are endless. In addition to..',
   },
 ]
+
+export const newsList = [
+  {
+    img: '01.png',
+    title: 'Garden Care',
+    description: 'We are an online plant shop offering a wide range of cheap and trendy plants.',
+  },
+  {
+    img: '02.png',
+    title: 'Plant Renovation',
+    description: 'We are an online plant shop offering a wide range of cheap and trendy plants.',
+  },
+  {
+    img: '03.png',
+    title: 'Watering Graden',
+    description: 'We are an online plant shop offering a wide range of cheap and trendy plants.',
+  },
+]
